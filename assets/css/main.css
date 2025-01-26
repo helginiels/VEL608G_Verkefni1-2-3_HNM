@@ -1291,9 +1291,9 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			
-			height: 13rem;
-			line-height: 10rem;
+			position: fixed;
+			height: 10rem;
+			line-height: 7rem;
 
 		}
 
