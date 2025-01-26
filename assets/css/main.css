@@ -1282,19 +1282,15 @@ input, select, textarea {
 				background: #ffffff;
 			}
 
-		#header > :first-child {
-			margin-top: 0;
-		}
+		
 
 			#header > :first-child:before {
 				display: none;
 			}
 
 		#header .logo {
-			position: fixed;
-			height: 10rem;
+			height: 15rem;
 			line-height: 7rem;
-
 		}
 
 
