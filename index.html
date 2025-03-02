@@ -142,15 +142,144 @@
             
                                 </p>
                                 
-                                <span class="image main"><img src="images/smiley.jpg" alt="" height=50px; /></span>
+                                <span class="image main"><img src="images/smiley.jpg" alt="" height=200px; /></span>
                                 
 							</article>
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h1 class="major">Verkefni 2</h1>
+                                Verkefni 2 skiptist upp í 2 hluta. Í fyrsta lagi að hanna og skera út límmiða og í öðru lagi að hanna og skera út geirneglt (pressfit) líkan <br> <br>
+                            
+                                <h2 class="major">Fyrri hluti</h2>
+                                Ég ákvað að velja lógóið hjá kraftlyftingafélaginu sem ég æfi með:
+                                
+                                <span class="image main"><img src="images/kraftf.jpg" alt="" /></span>
+                                
+                                Ég notaði mynd með hærri myndgæði en þetta, hún bara sést ekki á dökkum bakgrunni. Ég fylgdi <a href="https://www.youtube.com/watch?v=7eW4t-Rmpyo&list=PLGuNTpc293hoXV4QE6y4MAGTWkPRrPBvJ&index=6">þessu myndbandi</a> við gerð á clipart í inkscape. Ég setti myndina sem sagt inn í inkscape, skalaði hana til og notaði trace bitmap fallið til þess að breyta myndinni í clipart. Að því loknu fór ég í fill and stroke fallið, gerði flat color í stroke paint og stroke width 0.02 mm. Þá leit það svona út:
+                                
+                                 <span class="image main"><img src="images/kraftclipart.png" alt="" /></span>
+                                
+                                Þá lét ég hafliða skera þetta út með laserskera sem heppnaðist og kom svona út:
+                                
+                                 <span class="image main"><img src="images/kraftfinal.jpg" alt="" /></span>
+                                
+                                <h2 class="major">Seinni hluti</h2>
+								<p>Seinni hluti verkefnisins snerist um að hanna hlut í fusion eða sambærilegu forriti. Hlutinn átti að hanna með pressfit festingum sem er oftast gert með svokölluðum fingrasamskeytum sem þurfa þá ekkert lím eða annars konar festingar. Dæmi má sjá á mynd:</p>
+                                
+                                <span class="image main"><img src="images/finger%20joints.jpg" alt="" /></span>
+                                
+                                Svona festingar eru oft notaðar í viðarvinnu til þess að bæta við öryggi festinga. 
+                                <br>
+                                <br>
+                                
+                                <h3 class="major">
+                                Val á hlut
+                                </h3>
+                                Áður en ég ákvað hlutinn horfði ég á <a href="https://www.youtube.com/watch?v=yhHhSVoL1RQ&t=2s">dæmi</a> um hönnun á pressfit kassa í fusion 360. Eftir að horfa á það myndband datt mér í hug að hanna sameiginlegt geymslusvæði fyrir allt það sem ég hef á mér á daginn. S.s sími, lyklar, veski, ipad, úr og heyrnartól. Ég ákvað að byrja með módelið úr <a href="https://www.youtube.com/watch?v=yhHhSVoL1RQ&t=2s">myndbandinu</a> sem sniðmát, og vinna með það þaðan. 
+                                <br>
+                                <br>
+                                
+                                <h3 class="major">
+                                Verklýsing
+                                </h3>
+                                
+                                Fyrsta breytingin sem ég gerði var að extruda ekki einn vegginn á kassanum. Modelið leit þá svona út:
+                                
+                                <span class="image main"><img src="images/boxv1.jpg" alt="" /></span>
+                                
+                                Þá vildi ég búa til pláss fyrir ipadinn. Til þess ákvað ég að búa til hillu sem færi inn í kassann þannig að ipadinn kæmist fyrir undir. Þá skilgreindi ég parameter fyrir hæðina á hillunni og extrudaði sem leit svona út:
+                                
+                                <span class="image main"><img src="images/boxv3.png" alt="" /></span>
+                                
+                                Á þessari mynd má hins vegar sjá að það er einn sameiginlegur body fyrir alla þrjá veggina. Þetta þurfti að laga þannig að ég byrjaði upp á nýtt. Ég extrudaði í það skiptið hvern body einn í einu og passaði að haka við rétta möguleikann af join, cut og new body í extrude fallinu þar sem átti við:
+                                
+                                <span class="image main"><img src="images/extrude.png" alt="" /></span>
+                                
+                                Hugmyndin var þá orðin að hafa símann hægra meginn í kassanum og veskið, úrið og heyrnartólin vinstra megin. Jafn framt vildi ég hafa lyklana á snaga sem yrði einhvers staðar á veggnum. Þá setti ég inn vegg sem skipti rýminu í tvennt og bjó til fingrafestingar með rectangular pattern fallinu í fusion. Einnig bjó ég þá til hillu vinstra megin á sama hátt og ipad hilluna þar sem veskið færi undir en úrið yfir.
+                                <br>
+                                <br>
+                                <b>Vert er að minnast á að ég setti parametra fyrir hverja mælistærð. Þar á meðal fjarlægð skilveggs frá hægri vegg, dýpt hans, hæð hillnanna o.s.frv. Þannig gat ég frestað því þangað til í lokin að mæla hvað hvert rými þyrfti að vera stórt. 
+                                
+                                <br>
+                                <br>
+                                    
+                                Eftir fyrra skref leit módelið svona út:
+                                </b>
+                                <span class="image main"><img src="images/boxv5.png" alt="" /></span>
+                                
+                                <h3 class="major">
+                                Mælingar
+                                </h3>
+                                
+                                Nú var komið að því að mæla rýmið. Hugmyndin var að setja kassann á hillu sem má sjá á eftirfarandi mynd:
+                                
+                                <span class="image main"><img src="images/rymi.jpg" alt="" /></span>
+                                
+                                Á myndinni má sjá að veggurinn/loftið hallar inn á við í 50 mm hæð sem gerir það að verkum að módelið kæmist ekki að veggnum þar sem vegghæðin átti að vera um 75 mm. Því ákvað ég að mæla hornið sem loftið myndaði við vegginn með reglu pýþagórasar og sínus reglunni sem var um 47 gráður. 
+                                <br>
+                                Þá mælingu gat ég nýtt til þess að cutta bakplötuna (extrude) um 47 gráður í 50 mm hæð sem leit þá svona út:
+                                
+                                <span class="image main"><img src="images/boxv6.png" alt="" /></span>
+                                
+                                <h3 class="major">
+                                Undirbúningur fyrir skurð
+                                </h3>
+                                
+                                Þá var kominn tími til að undirbúa modelið fyrir skurð. Ég byrjaði á því að fletja hlutinn út. Til þess fylgdi ég <a href="https://www.youtube.com/watch?v=yhHhSVoL1RQ&t=2s">þessu tutorial</a>. Aðferðin felur það í sér að breyta öllum bodyunum í componenta, færa þá í 3dmodel möppu og síðan afrita í 3dlayout möppu. Þá er maður með tvö líkön og getur fært componenta 3dlayout líkansins í sundur og á sama plan. Það kom svona út hjá mér:
+                                
+                                <span class="image main"><img src="images/layoutfail.png" alt="" /></span>
+                                
+                                Á þessum tímapunkti hafði ég ákveðið að nota 3mm akrílplötu fyrir prentunina af stærð 500x500mm. Því þurfti módelið að passa inn á plan af þeirri stærð. Til þess þurfti ég aðeins að lágmarka lengdina og hæðina.
+                                
+                                <h3 class="major">
+                                KERF mæling
+                                </h3>
+                                Kerf-breidd er sú breidd efnis sem er skorin burt við t.d. laser-skurð. Hún er frábrugðin milli efna, efnisþykkta, laserstyrks, tíðni o.s.frv. Því er mikilvægt að mæla kerf-ið fyrir hvert efni og efnisþykkt sem skal nota. Ég vildi nota 3mm akrýl þ.a. ég þurfti að mæla fyrir það efni
+                                <br>
+                                <br>
+                                Ég, Kári og Karl Hákon mældum kerfið saman. Aðferðin sem við notuðum var að teikna upp 10 kassa hlið við með jöfnu millibili:
+                                
+                                <span class="image main"><img src="images/kerfm%C3%A6ling.png" alt="" /></span>
+                            
+                                Hugmyndin var þá að skera línurnar út án tillits til kerfsins. Útskorna svæðið mínus lengd hvers kassa hlið við hlið væri þá kerfið sinnum 11 þar sem það eru 11 samsíða línur yfir lengdina. Ég exportaði þá líkaninu sem dxf yfir í inkscape, skalaði það rétt og setti stroke paint flat colour með stroke width 0.02 mm:
+                                
+                                <span class="image main"><img src="images/inkscm%C3%A6ling.png" alt="" /></span>
+                                
+                                Þá var þetta skorið út:
+                                
+                                <span class="image main"><img src="images/m%C3%A6lingmynd.jpg" alt="" /></span>
+                                
+                                og við fengum 0.133 mm. <br><br>
+                                
+                                <h3 class="major">
+                                Pressfit prófun
+                                </h3>
+                                
+                                Næsta skref var að prófa pressfit festinguna. Þá hannaði ég pressfit módel með 3 mm þykkt sem leit svona út:
+                                
+                                <span class="image main"><img src="images/pressfittestmynd.png" alt="" /></span>
+                            
+                                og til þess að stilla kerfið fór ég eftir <a href="https://www.youtube.com/watch?v=dKBxSx3Tv1k">þessu myndbandi</a>. 
+                                Maður á semsagt að búa til cutting profile í manufacture glugganum í fusion og setja þar inn kerf mælingu í cutter profile. Þá exportaði post processaði ég líkanið með autocad dxf post processor sem má finna í fusion library þegar maður velur processorinn í fusion:
+                                
+                                 <span class="image main"><img src="images/dxfpost.png" alt="" /></span>
+                                
+                                Sem er síðan sett inn í inkscape og unnið á sama hátt og kerf mælingin.
+                                
+                                Testið kom hinsvegar út allt of þröngt. Því prófaði ég að nota sama kerf og annar hópur hafði notað sem var aftur alltof þröngt. Þá hækkaði ég kerfið upp í 0.17 mm sem virkaði aftur ekki. Að lokum fann ég út að vandamálið var að þykkt plötunnar var 3.1 mm en ekki 3 mm slétt. Þegar ég breytti því og notaði 0.15 kerf þá passaði það nógu vel. 
+                                <br> <br>
+                                <h3 class="major">
+                                Lokaskurður
+                                </h3>
+                                
+                                <b>Nú reyndi ég að breyta þykktinni á upprunalega líkaninu en það gekk ekki. Ég hafði gleymt að setja inn þykktarcompensation í mælistærðir líkansins. Til þess að spara vonandi tíma ákvað ég þá að teikna líkanið aftur upp frá grunni.</b> <br> <br> Þá mældi ég þykkt plötunnar sem ég ætlaði að nota sem var um 2.95 mm. Ég setti það inn í þykktarparametrinn og exportaði í inkscape á sama hátt og í fyrri lið. Að lokum var það skorið út sem kom svona út
+                                 <span class="image main"><img src="images/skori%C3%B0.jpg" alt="" /></span>
+                                Það var heldur laust (Ég var hræddur um að það yrði of þröngt þannig að ég overcompensataði kerfið aðeins) þannig að ég límdi það saman heima. Á hillunni lítur það svona út:
+                                
+                                <span class="image main"><img src="images/heimafinal.jpg" alt="" /></span>
+
+                                
 							</article>
 
 						<!-- Contact -->
