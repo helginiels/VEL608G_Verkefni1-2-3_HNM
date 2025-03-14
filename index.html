@@ -292,35 +292,106 @@
                                 
 							</article>
 
-						<!-- Contact -->
+						<!-- Verkefni 3 -->
 							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								<h1 class="major">Verkefni 3</h1>
+								
+                                Þetta verkefni gengur út á að hanna og 3d prenta hlut sem ekki væri hægt að framleiða með hefðbundnari leiðum (Addative vs Subtractive). Einnig á að þrívíddarskanna hlut með forriti að eigin vali
+								<br>
+                                <br>
+                                
+                                <h2 class="major">Fyrri hluti - 3d prentun</h2>
+                                
+                                <h3 class="major"
+                                >Val á hlut</h3>
+                                
+                                Fyrsti hluti verkefnisins var að ákveða hvað skuli hannað. Ég skimaði um herbergið mitt í leit að hugmyndum og datt loks á gítarmagnarann. Þá hugsaði ég hvað það væri fínt að geta falið snúruna einhvern veginn svo hún yrði ekki fyrir. Þá teiknaði ég upp drög að hönnun:
+                                
+                                 <span class="image main"><img src="images/draftcoil.jpeg" alt="" /></span>
+                                
+                                Hugmyndin var sem sagt að hengja einhvers konar kassa á hlið magnarans. Hljóðsnúran kæmi þá inn í hlið kassans og vefðist utan um spólu og út um toppinn. Ég gerði þá nokkrar mælingar á magnaranum og lagðist síðan í hönnun
+                                <br>
+                                <br>
+                                
+                                <h3 class="major"
+                                >Hönnun Hlutar</h3>
+                                
+                                Ákveðið var að nota fusion við hönnun hlutarins. Jafn framt ákvað ég að notast við parametríska hönnun þar sem ég var ekki alveg viss um hvernig ég vildi hafa stærðina.
+                                <br>
+                                <br>
+                                <span class="image main"><img src="images/parametrar3d.png" alt="" /></span>
+                                Hönnunin gekk nokkuð smurt fyrir sig og tók ekki langan tíma. Ég notaði polygon fallið til þess að móta fyrir götin á kassanum.
+                                
+                                 <span class="image main"><img src="images/polygon.png" alt="" /></span>
+                                
+                                Til þess að lágmarka efnisnot skar ég sívalning innan úr spólunni.  Módelið má sjá hér fyrir neðan:
+                                <br>
+                                <br>
+                                <iframe src="https://myhi423.autodesk360.com/shares/public/SH30dd5QT870c25f12fcd92b9af8ad7d4b71?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                            
+                                <br>
+                                <br>
+                                 <h3 class="major"
+                                >Takmarkanir og prófanir</h3>
+                            
+                                Mikilvægt er að taka tillit til takmarkana sem fylgja 3d prentun. Til dæmis má skögun (e. overhang) ekki vera of mikil. Fyrir þetta líkan var hugmyndin að prenta þannig að endi spólunnar snéri niður (sjá líkan). Þannig gæti ég lágmarkað overhang vegalengdir. Þá var þó tvennt sem þurfti að prófa, brúun efnisins yfir átthyrningsgatið og brúun frá veggjum að spólu. Hugsanlega myndi ég þurfa að bæta einhverjum stuðningi á milli spólu og veggja.
+                                Til þess að prófa þetta bjó ég til tvö líkön:
+                                
+                                  <span class="image main"><img src="images/hexpr%C3%B3f.png" alt="" /></span>
+                                
+                                og
+                                
+                                  <span class="image main"><img src="images/bridgetest.png" alt="" /></span>
+                                
+                                Hið fyrra líkir sem sagt eftir sexhyrningsgatinu og hið seinna brúunarbilinu. Þá exportaði ég þeim saman sem 3mf úr fusion og færði yfir í PrusaSlicer forritið. Þar notaði ég 0.15 mm lagþykkt, PETG efnistegund og 20% infill. PETG varð fyrir valinu vegna þess að ég vildi hámarka efnisstyrk.
+                                
+                                <span class="image main"><img src="images/prusatest.png" alt="" /></span>
+                                
+                                Að lokum var hægt að færa .gcode skrá yfir í prentarann. Prófanirnar komu svona út:
+                                
+                                 <span class="image main"><img src="images/bridgetestresult.jpg" alt="" /></span>
+                                
+                                Eins og má sjá er eitthvað sig í beinu brúuninni en ekki mjög markvert og hefur ekki áhrif á efri brún eins og má sjá. Til þess að vera alveg viss um að sigið yrði ekki vesen passaði ég að centera spóluna alveg í kassanum þannig að max brúnarvegalengdin yrði aðeins um 30mm. Í kjölfarið smellti ég líkaninu inn í prusa slicer með sömu stillingum og enda spólunnar niður:
+                                
+                                <span class="image main"><img src="images/finalprusa.png" alt="" /></span>
+                                
+                                Prentið tók um 6 tíma og notaði ca. 50g af efni
+                                
+                                <span class="image main"><img src="images/prusatime.png" alt="" /></span>
+                                
+                                Það varð talsvert sig í beinu brúuninni sem má sjá hér:
+                                
+                                  <span class="image main"><img src="images/sig.jpg" alt="" /></span>
+                                
+                                Mögulega væri hægt að breyta stillingum prentarans eitthvað til þess að gera brúun auðveldari með PETG plastinu. Almennt er þó líklega sniðugt að halda sig frá PETG ef maður ætlar mikið að brúa. Til þess er PLA betra. Í notkun lítur þetta svona út:
+                                
+                                  <span class="image main"><img src="images/modelinaction.jpg" alt="" /></span>
+                            
+                                
+                                <h2 class="major">Seinni hluti - 3d skönnun</h2>
+                                
+                                
+                                Seinni hluti snýst um að 3d skanna einhvern hlut. Ég ákvað að skanna þessa 1kg skyrdollu:
+                                
+                                  <span class="image main"><img src="images/IMG_2144.jpg" alt="" /></span>
+                                
+                                Til að byrja með tók ég u.þ.b. 50 myndir hringinn í kringum dolluna ásamt nokkrum ofaná. Þá var kominn tími til að færa myndirnar inn í viðeigandi myndmælingarforrit. Ég ákvað að nota RealityCapture. Þar færði ég inn möppu með myndunum, ýtti á align images og síðan start. Skannið kom frekar illa út:
+                                
+                                  <span class="image main"><img src="images/scanfail.png" alt="" /></span>
+                                
+                                Í staðinn fyrir að fikta mig áfram kaus ég að prófa annað forrit, 3DF Zephyr. Þar valdi ég quick project, setti möppuna inn og kom það svona út
+                                
+                                  <span class="image main"><img src="images/zephyrscan.png" alt="" /></span>
+                                
+                                Ágætt, en tók líka slatta af borðinu og veggjum með. Til þess að einangra dolluna notaði ég bounding box edit fallið
+                                
+                                 <span class="image main"><img src="images/boundary.png" alt="" /></span>
+                                
+                                og það varð á endanum svona:
+                                
+                                 <span class="image main"><img src="images/skyrfinal.png" alt="" /></span>
+                                
+                                
 							</article>
 
 						<!-- Elements -->
